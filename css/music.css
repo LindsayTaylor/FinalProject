@@ -1,16 +1,17 @@
 
-/*#fadeImage{
-  background: white;
-}*/
-
 * {
+  box-sizing: border-box;
+}
 
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 #container{
-  display: none;
+  /*display: none;*/
   max-width: 960px;
   margin: auto;
 }
@@ -28,10 +29,6 @@ body{
   margin: auto;
   padding: 2% 0 2% 0;
   width: 100%;
-}
-
-.clearfix{
-  clear: both;
 }
 
 
@@ -59,41 +56,53 @@ body{
   width: 15%;
 }
 
-main{
-  box-sizing: border-box;
+
+.music{
   clear: both;
-  display: block;
+  display: inline-block;
+  font-size:2rem;
   margin: auto;
-  /*position:relative;*/
-  width: 100%;
+  padding: 10% 10% 10% 10%;
+  text-align: center;
+  width: 49%;
 }
 
-.content{
-  display: block;
-  padding: 10% 25% 10% 25%;
-  text-align: center;
-  width: 50%;
+p:hover{
+  cursor: pointer;
+  font-size: 3rem;
 }
 
-.content h1{
-  color: white;
-  display: block;
-  font-size: 4.5rem;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-  }
 
+
+#grindin{
+  color: rgb(255,20,147);
+}
+
+
+#pop{
+  color:#00FF00;
+}
+
+#money{
+  color:#FFFF00;
+}
+
+#move{
+  color:#00F5FF;
+}
+
+.soundcloud{
+  display: none;
+}
 
 footer{
   clear: both;
   display: block;
 }
-
-.media img{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  .media img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #social{
