@@ -42,7 +42,7 @@ $(document).ready(function(){
               }
 
 
-              $("#popsound p").mouseenter(green);
+              $("#pop p").mouseenter(green);
               $("#grindin p").mouseenter(pink);
               $(".music p").mouseleave(normal);
 
