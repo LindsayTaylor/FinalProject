@@ -59,6 +59,7 @@ body{
 
 .music{
   clear: both;
+  color: white;
   display: inline-block;
   font-size:2rem;
   margin: auto;
@@ -74,7 +75,7 @@ p:hover{
 
 
 
-#grindin{
+/*#grindin{
   color: rgb(255,20,147);
 }
 
@@ -89,7 +90,8 @@ p:hover{
 
 #move{
   color:#00F5FF;
-}
+}*/
+
 
 .soundcloud{
   display: none;
