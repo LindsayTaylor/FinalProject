@@ -66,25 +66,51 @@ main{
   margin: auto;
   padding: 10% 10% 10% 10%;
   text-align: center;
-  width: 49%;
+  width: 48%;
 }
 
 p:hover{
   cursor: pointer;
   font-size: 3rem;
 }
-.soundcloud{
-  display: none;
+
+
+#buttonBox p{
+  color: white;
+  text-align: right;
 }
 
-#grindinsound{
-  clear:both;
-  display: inline-block;
+.box{
   display: none;
-  margin: auto;
-  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+}
+
+
+iframe{
+  display: none;
   text-align: center;
-  width: 49%;
+}
+
+
+#grindinsound {
+    display: none;
+    padding: 7%;
+}
+
+#buttonBox{
+  background-color: rgba(255,182,193,.5);
+  border: 1px solid white;
+  display: none;
+  padding: 5%;
+}
+
+
+.soundcloud{
+  display: none;
 }
 
 footer{

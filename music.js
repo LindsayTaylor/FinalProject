@@ -69,7 +69,11 @@ $(document).ready(function(){
                 $(".music").css("display","none");
                 $("header").css("display","none");
                 $("#social").css("display","none");
-                $("#grindinsound").fadeIn("7000");
+                $(".box").css("display","flex");
+                $("#buttonBox").css("display","block");
+                $(".buttonBox p").css("display","block");                 $("#grindinsound").css("display","block");
+                $("#grindinsound p").css("display","block");
+                $("iframe").css("display","block");
               }
 
 
