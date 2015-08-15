@@ -74,12 +74,6 @@ p:hover{
   font-size: 3rem;
 }
 
-
-#buttonBox p{
-  color: white;
-  text-align: right;
-}
-
 .box{
   display: none;
   justify-content: center;
@@ -89,29 +83,34 @@ p:hover{
   width: 100%;
 }
 
-
-iframe{
+#buttonBox{
   display: none;
-  text-align: center;
 }
 
+#buttonBox p{
+  color: white;
+  text-align: right;
+}
 
 #grindinsound {
-    display: none;
     padding: 7%;
 }
 
 #buttonBox{
   background-color: rgba(255,182,193,.5);
   border: 1px solid white;
-  display: none;
   padding: 5%;
 }
 
-
 .soundcloud{
-  display: none;
+
 }
+
+iframe{
+  text-align: center;
+}
+
+
 
 footer{
   clear: both;
