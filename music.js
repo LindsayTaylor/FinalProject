@@ -65,6 +65,22 @@ $(document).ready(function(){
                 $("footer").css("display","");
               }
 
+              function songA(){
+                $(".music").css("display","none");
+                $("header").css("display","none");
+                $("#social").css("display","none");
+                $("#grindinsound").fadeIn("7000");
+              }
+
+
+
+              /*function toStarter(){
+                /*if($(".soundcloud").css("display") == "inline-block");
+                if(event.target.grindinsound) {
+                    return;
+                {
+                  alert("yep");
+                }*/
 
 
               $("#grindin p").mouseenter(pink);
@@ -72,7 +88,9 @@ $(document).ready(function(){
               $("#money p").mouseenter(blue);
               $("#move p").mouseenter(orange);
               $(".music p").mouseleave(normal);
-              $("grindin p").click(songA);
+              $("#grindin p").click(songA);
+
+              $("#container").click(toStarter);
 
 
   });
