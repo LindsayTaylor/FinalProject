@@ -26,6 +26,7 @@ body{
   clear: both;
   display: block;
   float: left;
+  font-family: Lato;
   margin: auto;
   padding: 2% 0 2% 0;
   width: 100%;
@@ -75,6 +76,10 @@ p:hover{
   font-size: 3rem;
 }
 
+.box p:hover{
+  font-size: 2rem;
+}
+
 .box{
   display: none;
   height: 100vh;
@@ -89,19 +94,19 @@ p:hover{
 #buttonBox p{
   color: white;
   float: right;
+  font-weight: 100;
   text-align: right;
-  width:20%;
 }
 
 #grindinsound {
-    padding: 7%;
+    padding: 10%;
 }
 
 #buttonBox{
   background-color: rgba(255,182,193,.5);
   border: 1px solid white;
   display: none;
-  padding: 1%;
+  padding: 2%;
 }
 
 .soundcloud{

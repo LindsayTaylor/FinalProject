@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Lato";
 
 
 }
@@ -29,6 +30,7 @@ body{
   clear: both;
   display: block;
   float: left;
+  font-family: Lato;
   margin: auto;
   padding: 2% 0 2% 0;
   width: 100%;
