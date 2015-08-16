@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
     else{
-    $("#buttonBox").slideToggle("slow");
+    $("#buttonBox").slideUp("slow");
     $(".music").css("display","");
     $("header").css("display","");
     $("#social").css("display","");
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 
 
-              function pink(){
+            function pink(){
                 $("body").css("backgroundImage","none");
                 $("body").css("background-color", "rgb(255,20,147)");
                 $(".music").css("color","rgb(255,20,147)");
@@ -73,23 +73,6 @@ $(document).ready(function(){
               }
 
 
-              /*function songA(){
-                if($(".header").is(":visible"){
-
-                $(".music").css("display","none");
-                $("header").css("display","none");
-                $("#social").css("display","none");
-                $("#boxA").css("display","flex");
-                $("#buttonBox").slideToggle("slow");
-
-              } else{
-
-                $(".music").css("display","none");
-                $("header").css("display","none");
-                $("#social").css("display","none");
-                $("#boxA").css("display","flex");
-                $("#buttonBox").slideToggle("slow");
-              }*/
 
 
               $("#grindin p").mouseenter(pink);

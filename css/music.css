@@ -76,6 +76,7 @@ p:hover{
 
 .box{
   display: none;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -83,13 +84,12 @@ p:hover{
   width: 100%;
 }
 
-#buttonBox{
-  display: none;
-}
 
 #buttonBox p{
   color: white;
+  float: right;
   text-align: right;
+  width:20%;
 }
 
 #grindinsound {
@@ -99,7 +99,8 @@ p:hover{
 #buttonBox{
   background-color: rgba(255,182,193,.5);
   border: 1px solid white;
-  padding: 5%;
+  display: none;
+  padding: 1%;
 }
 
 .soundcloud{
@@ -132,7 +133,6 @@ footer{
 
   .nav li{
     float:none;
-    width: 25%;
   }
 
   .nav ul{
