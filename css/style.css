@@ -4,6 +4,7 @@
 }*/
 
 * {
+  box-sizing: border-box;
 
 
 }
@@ -63,7 +64,6 @@ body{
 }
 
 main{
-  box-sizing: border-box;
   clear: both;
   display: block;
   margin: auto;
@@ -75,7 +75,7 @@ main{
   display: block;
   padding: 2% 25% 2% 25%;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 
 .content h1{
