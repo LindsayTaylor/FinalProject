@@ -159,3 +159,9 @@ footer{
   }
 
 }
+@media (max-height: 400px){
+  .box{
+    height:auto;
+  }
+
+}
