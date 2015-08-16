@@ -1,15 +1,22 @@
 $(document).ready(function(){
 
-  /*$(window).load(function(){
-     $('#imageID').fadeOut('slow',function(){
-           setTimeout(function(){
-              $(this).fadeOut('slow');*/
+  function songA(){
+    if($("#grindin").is(":visible")){
 
-              /*function practice (){
+    $(".music").css("display","none");
+    $("header").css("display","none");
+    $("#social").css("display","none");
+    $("#boxA").css("display","flex");
+    $("#buttonBox").slideToggle("slow");}
 
-              }
 
-              $("#container").fadeIn(7000);*/
+    else{
+    $("#buttonBox").slideToggle("slow");
+    $(".music").css("display","");
+    $("header").css("display","");
+    $("#social").css("display","");
+    $("#boxA").css("display","none");}
+  }
 
 
 
@@ -65,28 +72,24 @@ $(document).ready(function(){
                 $("footer").css("display","");
               }
 
-              function songA(){
+
+              /*function songA(){
+                if($(".header").is(":visible"){
+
                 $(".music").css("display","none");
                 $("header").css("display","none");
                 $("#social").css("display","none");
                 $("#boxA").css("display","flex");
-                $("#buttonBox").slideDown("slow");
+                $("#buttonBox").slideToggle("slow");
 
-                /*$("#buttonBox").css("display","block");
-                $(".buttonBox p").css("display","block");                 $("#grindinsound").css("display","block");
-                $("#grindinsound p").css("display","block");
-                $("iframe").css("display","block");*/
-              }
+              } else{
 
-
-
-              /*function toStarter(){
-                /*if($(".soundcloud").css("display") == "inline-block");
-                if(event.target.grindinsound) {
-                    return;
-                {
-                  alert("yep");
-                }*/
+                $(".music").css("display","none");
+                $("header").css("display","none");
+                $("#social").css("display","none");
+                $("#boxA").css("display","flex");
+                $("#buttonBox").slideToggle("slow");
+              }*/
 
 
               $("#grindin p").mouseenter(pink);
@@ -94,9 +97,6 @@ $(document).ready(function(){
               $("#money p").mouseenter(blue);
               $("#move p").mouseenter(orange);
               $(".music p").mouseleave(normal);
-              $("#grindin p").click(songA);
-
-              $("#container").click(toStarter);
-
+              $("p").click(songA);
 
   });
