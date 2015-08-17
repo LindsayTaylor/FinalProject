@@ -11,7 +11,8 @@ $(document).ready(function(){
 
 
     else{
-    $("#buttonBox").slideUp("slow");
+    $("#buttonBox").slideToggle("slow"); /*function(){
+      alert("yep")}  --need to figure out what is wrong with callback syntax/how to make this work*/
     $(".music").css("display","");
     $("header").css("display","");
     $("#social").css("display","");

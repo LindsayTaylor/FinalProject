@@ -32,7 +32,6 @@ body{
   width: 100%;
 }
 
-
 .nav li{
   border: 2px white solid;
   display: inline-block;
@@ -78,6 +77,7 @@ p:hover{
 
 .box p:hover{
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .box{
