@@ -84,3 +84,18 @@ $(document).ready(function(){
               $("p").click(songA);
 
   });
+
+
+  /*
+  1. Pull in api.js https://w.soundcloud.com/player/api.js in your HTML
+  2. Add iFrame to HTML with distinct ID
+  3. Add JS so you can pause the "Widget"
+
+  $(document).ready(function() {
+     var widget = SC.Widget(document.getElementById('YOUR ID GOES HERE'));
+     $('button').click(function() {
+       widget.pause();
+     });
+   });
+
+  */
