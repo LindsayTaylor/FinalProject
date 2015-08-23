@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is a boilerplate for building websites." />
+    <title>ConTACT INfO</title>
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+  </head>
+
+  <body>
+      <div id="container">
+       <header id="page-header">
+           <div class="clear-fix">
+              <div class="nav">
+                <ul>
+                  <li>
+                    <a href="index.html">HoME</a>
+                  </li>
+                  <li>
+                    <a href="music.html">MUSIC</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">ConTACt</a>
+                  </li>
+                  <li>
+                    <a href="updates.html">UPDATES</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <main>
+            <div class="content">
+              <h1>CoNTAcT INfO</h1>
+                  <form action="contact.html">
+                    <label for="name">NaME</label>
+                    <br/>
+                    <input name="name" type="text" size="50%">
+                    <br/>
+                    <label for="email">EMaIl</label>
+                    <br/>
+                    <input name="email" type="email" size="50%" required>
+                    <br/>
+                    <label for="telephone">PHonE #</label>
+                    <br/>
+                    <input name="telephone" type="text" pattern="\d{3}-\d{4}" title="please enter correct form ###-####" size="50%" required>
+                    <br/>
+                    <label>ST. aDDrESs</label>
+                    <br/>
+                    <input name="StreetAddress" type="text" title="Street Address Required" size="50%" required>
+                    <br/>
+                    <label>CiTY</label>
+                    <br/>
+                    <input name="City" type="text" title="City Required" size="50%" required>
+                    <br/>
+                    <label>STaTe</label>
+                    <select required>
+                      <option value="" required>--</option>
+                      <option value="AL" required >AL</option>
+                      <option value="DC" required>DC</option>
+                    </select>
+                    <br/>
+                    <label>WhY DO YoU NEeD a DJ?</label>
+                    <br/>
+                    <input name="additionalInfo" type="text" title="Additional Info Required" height="200px" size="100%" required>
+                    <br/>
+                    <input type="submit" value="SaY HI!!!"/>
+                  </form>
+            </div>
+          </main>
+          <footer>
+            <div id="social">
+  						<a href="facebook.com"><img class="media" src="facebook.png"></a>
+  						<a href="twitter.com"><img class="media" src="twitter.png"></a>
+  					</div>
+          </footer>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>

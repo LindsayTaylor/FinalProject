@@ -11,16 +11,15 @@ $(document).ready(function(){
 
 
     else{
-    $("#buttonBox").slideToggle("slow"); /*function(){
-      alert("yep")}  --need to figure out what is wrong with callback syntax/how to make this work*/
-    $(".music").css("display","");
+
+    $("#buttonBox").slideToggle("slow" , function(){
+    $(".music").fadeIn("slow");
     $("header").css("display","");
     $("#social").css("display","");
     $("#boxA").css("display","none");}
+
+  )}
   }
-
-
-
 
             function pink(){
                 $("body").css("backgroundImage","none");
@@ -84,6 +83,12 @@ $(document).ready(function(){
               $("p").click(songA);
 
   });
+
+  var widget = SC.Widget(document.getElementById('SCboxA'));
+  $('p').click(function() {
+    widget.pause();
+  });
+
 
 
   /*
