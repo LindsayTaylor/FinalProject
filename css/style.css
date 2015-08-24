@@ -89,6 +89,9 @@ main{
   width: 100%;
   }
 
+.soundCloud{
+  display: none;
+}
 
 footer{
   clear: both;
