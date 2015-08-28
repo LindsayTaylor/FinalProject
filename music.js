@@ -38,6 +38,46 @@ $(document).ready(function(){
   )}
 }
 
+function songC(){
+  if($("#money").is(":visible")){
+  $(".music").css("display","none");
+  $("header").css("display","none");
+  $("#social").css("display","none");
+  $("#boxC").css("display","flex");
+  $("#buttonBoxC").slideToggle("slow");}
+
+
+  else{
+
+  $("#buttonBoxC").slideToggle("slow" , function(){
+  $(".music").fadeIn("slow");
+  $("header").css("display","");
+  $("#social").css("display","");
+  $("#boxC").css("display","none");}
+)}
+}
+
+function songD(){
+  if($("#money").is(":visible")){
+  $(".music").css("display","none");
+  $("header").css("display","none");
+  $("#social").css("display","none");
+  $("#boxD").css("display","flex");
+  $("#buttonBoxD").slideToggle("slow");}
+
+
+  else{
+
+  $("#buttonBoxD").slideToggle("slow" , function(){
+  $(".music").fadeIn("slow");
+  $("header").css("display","");
+  $("#social").css("display","");
+  $("#boxD").css("display","none");}
+)}
+}
+
+
+
             function pink(){
                 $("body").css("backgroundImage","none");
                 $("body").css("background-color", "rgb(255,20,147)");
@@ -99,6 +139,8 @@ $(document).ready(function(){
               $(".music p").mouseleave(normal);
               $(".first p").click(songA);
               $(".second p").click(songB);
+              $(".third p").click(songC);
+              $(".fourth p").click(songD);
 
 
   });
@@ -106,4 +148,22 @@ $(document).ready(function(){
   var widget = SC.Widget(document.getElementById('SCboxA'));
   $('p').click(function() {
     widget.pause();
+  });
+
+  var widgetB=
+  SC.Widget(document.getElementById('SCboxB'));
+    $('p').click(function() {
+      widgetB.pause();
+  });
+
+  var widgetC=
+  SC.Widget(document.getElementById('SCboxC'));
+    $('p').click(function() {
+      widgetC.pause();
+  });
+
+  var widgetD=
+  SC.Widget(document.getElementById('SCboxD'));
+    $('p').click(function() {
+      widgetD.pause();
   });

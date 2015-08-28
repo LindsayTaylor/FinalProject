@@ -118,6 +118,14 @@ p:hover{
   background-color: rgba(50,205,50,.5);
 }
 
+#buttonBoxC{
+  background-color: rgba(0,255,255,.5);
+}
+
+#buttonBoxD{
+  background-color: rgba(255,128,0,.5);
+}
+
 iframe{
   text-align: center;
 }
