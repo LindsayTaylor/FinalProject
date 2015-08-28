@@ -18,5 +18,5 @@ $(document).ready(function(){
   });
   var widget = SC.Widget(document.getElementById('song'));
   $('h1').click(function() {
-    widget.pause();
+    widget.play();
   });

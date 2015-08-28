@@ -2,24 +2,41 @@ $(document).ready(function(){
 
   function songA(){
     if($("#grindin").is(":visible")){
-
     $(".music").css("display","none");
     $("header").css("display","none");
     $("#social").css("display","none");
     $("#boxA").css("display","flex");
-    $("#buttonBox").slideToggle("slow");}
+    $("#buttonBoxA").slideToggle("slow");}
 
 
     else{
 
-    $("#buttonBox").slideToggle("slow" , function(){
+    $("#buttonBoxA").slideToggle("slow" , function(){
     $(".music").fadeIn("slow");
     $("header").css("display","");
     $("#social").css("display","");
     $("#boxA").css("display","none");}
-
-  )}
+    )}
   }
+
+  function songB(){
+    if($("#pop").is(":visible")){
+    $(".music").css("display","none");
+    $("header").css("display","none");
+    $("#social").css("display","none");
+    $("#boxB").css("display","flex");
+    $("#buttonBoxB").slideToggle("slow");}
+
+
+    else{
+
+    $("#buttonBoxB").slideToggle("slow" , function(){
+    $(".music").fadeIn("slow");
+    $("header").css("display","");
+    $("#social").css("display","");
+    $("#boxB").css("display","none");}
+  )}
+}
 
             function pink(){
                 $("body").css("backgroundImage","none");
@@ -80,7 +97,9 @@ $(document).ready(function(){
               $("#money p").mouseenter(blue);
               $("#move p").mouseenter(orange);
               $(".music p").mouseleave(normal);
-              $("p").click(songA);
+              $(".first p").click(songA);
+              $(".second p").click(songB);
+
 
   });
 
