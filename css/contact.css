@@ -1,7 +1,6 @@
 
 * {
   box-sizing: border-box;
-  color: white;
   display: block;
   font-family: "Lato";
 }
@@ -23,7 +22,7 @@ title{
 
 body{
   background: url("space4.gif");
-  color: white;
+  color: rgb(176,196,222);
 }
 
 #page-header{
@@ -67,6 +66,7 @@ main{
   width: 100%;
 }
 .content{
+  background: rgba(0,205,205,.5);
   border: 4px;
   border-color: white;
   border-style: solid;
@@ -76,17 +76,19 @@ main{
   width: 100%;
 }
 
-h1{
-  font-size: 3em;
-  padding: 20px;
+textarea{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*form{
-  text-align: center;
-}*/
+h1{
+  font-size: 3em;
+  padding: 5% 10%;
+}
+
 
 label{
-  color: white;
+  color: rgb(176,196,222);
 }
 
 label, input{
@@ -94,9 +96,20 @@ label, input{
   margin: 10px 5px 10px 0;
 }
 
+
+
+
 select {
 display: block;
 margin: 0 auto;
+}
+
+input[type="text"]{
+    font-size:.75rem;
+}
+
+input[type="email"]{
+    font-size:.75rem;
 }
 
 input[type=submit] {
@@ -114,11 +127,14 @@ footer{
   display: block;
 }
 
-.media img{
+a{
   display: inline-block;
+}
+.media {
   margin-left: auto;
   margin-right: auto;
   }
+
 
   #social{
     padding-bottom: 30px;
