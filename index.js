@@ -1,22 +1,35 @@
 $(document).ready(function(){
 
+$("#container").fadeIn(500);
 
-              function practice (){
+/*var foo = document.getElementById("noColor");*/
 
-              }
-              $("#cover").fadeOut(7000);
-              $("#container").fadeIn(500);
-              $("#cover").css("display","none");
+function colorChange() {
 
-              function song(){
-                alert("yep");
-              }
+  document.getElementById("noColor").id = "space";
 
-              $("h1").click(song);
-              $("img").click(song);
+  document.getElementById("dinoA").id="dinoB";
 
-  });
-  var widget = SC.Widget(document.getElementById('song'));
-  $('h1').click(function() {
-    widget.play();
-  });
+  document.getElementById("space").style.WebkitAnimation = "change 7s infinite";
+
+  document.getElementById("space").style.animation = "change 7s infinite";
+
+}
+
+function backToWhite(){
+  alert("yep");
+  /*document.getElementById("space").id = "noColor";*/
+
+}
+
+$("#noColor").click(colorChange);
+$("#space").click(backToWhite);
+/*$("#dinoB").click(backToWhite);*/
+
+});
+
+
+var widget = SC.Widget(document.getElementById('dino'));
+$('.content').click(function() {
+  widget.toggle();
+});
