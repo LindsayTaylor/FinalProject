@@ -1,0 +1,191 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#container{
+  max-width: 960px;
+  margin: auto;
+}
+
+body{
+  background: url("space4.gif");
+}
+
+#page-header{
+  border:0;
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  float: left;
+  font-family: Lato;
+  margin: auto;
+  padding: 2% 0 2% 0;
+  width: 100%;
+}
+
+.nav li{
+  border: 2px white solid;
+  display: inline-block;
+  float: right;
+  margin: 2%;
+  padding: 1%;
+}
+
+.nav li:hover{
+  background: white;
+}
+
+.nav li a:hover{
+  color: black;
+}
+
+.nav li a{
+  color: white;
+  font-size: .75rem;
+  list-style: none;
+  text-decoration: none;
+  width: 15%;
+}
+
+main{
+  width: 100%;
+  z-index: 2;
+}
+.music{
+  clear: both;
+  color: white;
+  display: inline-block;
+  font-size:2rem;
+  margin: auto;
+  padding: 10% 10% 10% 10%;
+  text-align: center;
+  width: 48%;
+}
+
+p:hover{
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.box p:hover{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.box{
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+  z-index: 5;
+}
+
+
+.frame p{
+  color: white;
+  float: right;
+  font-weight: 100;
+  font-size:1.5rem;
+  text-align: right;
+  font-family: "Lato";
+}
+
+.soundcloud {
+    padding: 10%;
+}
+
+.frame{
+  border: 1px solid white;
+  display: none;
+  padding: 3%;
+}
+
+#buttonBoxA{
+    background-color: rgba(255,182,193,.5);
+}
+#buttonBoxB{
+  background-color: rgba(50,205,50,.5);
+}
+
+#buttonBoxC{
+  background-color: rgba(0,255,255,.5);
+}
+
+#buttonBoxD{
+  background-color: rgba(255,128,0,.5);
+}
+
+iframe{
+  text-align: center;
+}
+
+
+
+footer{
+  clear: both;
+  display: block;
+}
+  .media img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #social{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .overlay {
+  background-color: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  display: none;
+}
+
+@media (max-width: 670px){
+
+  .nav li{
+    float:none;
+  }
+
+  .nav ul{
+    text-align: center;s
+  }
+}
+
+@media (max-width: 532px){
+
+  .nav li{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .content{
+      padding:0;
+      width: 100%;
+  }
+
+}
+@media (max-height: 400px){
+  .box{
+    height:auto;
+  }
+
+}

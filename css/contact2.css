@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+  display: block;
+  font-family: "Lato";
+}
+
+title{
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#container{
+  max-width: 992px;
+  margin: auto;
+}
+
+body{
+  background: url("space4.gif");
+  color: rgb(176,196,222);
+}
+
+#page-header{
+  border:0;
+  clear: both;
+  float: left;
+  font-family: "Lato";
+  margin: auto;
+  padding: 2% 0 2% 0;
+  width: 100%;
+}
+
+
+.nav li{
+  border: 2px white solid;
+  display: inline-block;
+  float: right;
+  margin: 2%;
+  padding: 1%;
+}
+
+.nav li:hover{
+  background: white;
+}
+
+.nav li a:hover{
+  color: black;
+}
+
+.nav li a{
+  color: white;
+  font-size: .75rem;
+  list-style: none;
+  text-decoration: none;
+  width: 15%;
+}
+
+main{
+  background-color: #708090;
+  border-radius: 4px 4px 0 0;
+  clear: both;
+  display: block;
+  margin: 0;
+  padding: 4%;
+  width: 100%;
+}
+
+.logo{
+padding: 40px;
+}
+
+textarea{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2{
+  font-weight: lighter;
+  padding: 0 0 12% 0;
+}
+
+h3{
+    padding: 0 0 12% 0;
+}
+
+.col-md-5{
+  border-bottom: 1px solid white;
+  padding: 0 3% 8% 3%;
+}
+
+.contact{
+  color: white;
+  text-align: center;
+}
+
+
+label{
+  color: rgb(176,196,222);
+}
+
+
+select {
+display: block;
+margin: 0 auto;
+}
+
+input[type="text"]{
+    background-color: #CDC9c9;
+    font-size:1.2rem;
+}
+
+input[type="email"]{
+    background-color: #CDC9c9;
+    font-size:1.2rem;
+}
+
+textarea#styled{
+    background-color: #CDC9c9;
+    font-size:1.2rem;
+}
+
+input[type=submit] {
+    background-color: #CDC9C9;
+    color:black;
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.contact{
+  text-align: center;
+}
+
+footer{
+  clear: both;
+  display: block;
+}
+
+a{
+  display: inline-block;
+}
+.media {
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
+  #social{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }

@@ -3,6 +3,16 @@
   background: white;
 }*/
 
+* {
+  box-sizing: border-box;
+  font-family: "Lato";
+
+
+}
+#cover{
+  background-color: white;
+  max-width: 960px;
+}
 
 #container{
   display: none;
@@ -20,8 +30,9 @@ body{
   clear: both;
   display: block;
   float: left;
+  font-family: Lato;
   margin: auto;
-  padding: 2% 8% 2% 8%;
+  padding: 2% 0 2% 0;
   width: 100%;
 }
 
@@ -48,14 +59,13 @@ body{
 
 .nav li a{
   color: white;
-  font-size: 24px;
+  font-size: .75rem;
   list-style: none;
   text-decoration: none;
   width: 15%;
 }
 
 main{
-  box-sizing: border-box;
   clear: both;
   display: block;
   margin: auto;
@@ -63,26 +73,45 @@ main{
   width: 100%;
 }
 
+
 .content{
-  padding: 10% 25% 10% 25%;
-  width: 50%;
+  display: block;
+  padding: 2% 25% 2% 25%;
+  text-align: center;
+  width: 100%;
+}
+
+.content:hover{
+  cursor: pointer;
 }
 
 .content h1{
   color: white;
-  font-size: 42px;
+  display: block;
+  font-size: 4.5rem;
+  margin: auto;
   text-align: center;
+  width: 100%;
   }
 
+  .red{
+    color:red;
+  }
+
+
+.soundCloud{
+  display: none;
+}
 
 footer{
   clear: both;
   display: block;
 }
-  .media img{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+
+.media img{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   #social{
@@ -90,3 +119,64 @@ footer{
     padding-top: 30px;
     text-align: center;
   }
+
+#noColor {color: white}
+@-webkit-keyframes colorChange {
+     0% {color: white;}
+     20% {color: rgb(255,20,147);}
+     40% {color: rgb(50,205,50);}
+     60% {color: rgb(0,255,255);}
+     80% {color: rgb(255,128,0);}      100% {color: white;}
+
+}
+@-moz-keyframes colorChange {
+  0% {color: white;}
+  20% {color: rgb(255,20,147);}
+  40% {color: rgb(50,205,50);}
+  60% {color: rgb(0,255,255);}
+  80% {color: rgb(255,128,0);}
+  100% {color: white;}
+
+}
+
+#noColor {
+    -webkit-animation-name: colorChange 5s infinite;
+    animation: colorChange 5s infinite;
+}
+
+#noColor.paused{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+
+
+
+
+@media (max-width: 670px){
+
+  .nav li{
+    float:none;
+    width: 25%;
+  }
+
+  .nav ul{
+    text-align: center;s
+  }
+}
+
+@media (max-width: 532px){
+
+  .nav li{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .content{
+      padding:0;
+      width: 100%;
+  }
+
+}
