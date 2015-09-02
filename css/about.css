@@ -1,0 +1,56 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#container{
+  max-width: 960px;
+  margin: auto;
+}
+
+body{
+  background: url("space4.gif");
+}
+
+#page-header{
+  border:0;
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  float: left;
+  font-family: Lato;
+  margin: auto;
+  padding: 2% 0 2% 0;
+  width: 100%;
+}
+
+.nav li{
+  border: 2px white solid;
+  display: inline-block;
+  float: right;
+  margin: 2%;
+  padding: 1%;
+}
+
+.nav li:hover{
+  background: white;
+}
+
+.nav li a:hover{
+  color: black;
+}
+
+.nav li a{
+  color: white;
+  font-size: .75rem;
+  list-style: none;
+  text-decoration: none;
+  width: 15%;
+}
