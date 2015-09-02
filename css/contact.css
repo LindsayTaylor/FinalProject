@@ -66,8 +66,12 @@ main{
   clear: both;
   display: block;
   margin: 0;
-  padding: 4%;
+  padding: 2%;
   width: 100%;
+}
+
+.center-block{
+  border: black solid 2px;
 }
 
 .logo{
