@@ -1,14 +1,23 @@
 $(document).ready(function(){
 
-  /*$(window).load(function(){
-     $('#imageID').fadeOut('slow',function(){
-           setTimeout(function(){
-              $(this).fadeOut('slow');*/
+$("#container").fadeIn(500);
 
-              function practice (){
+/*var hasClass = element.content.contains("rainbow");*/
 
-              }
+function colorChange() {
+  $("#noColor").toggleClass("paused");
+  $("#noColor").css("color, white");
+}
 
-              $("#container").fadeIn(7000);
 
-  });
+
+$("#noColor").click(colorChange);
+
+
+});
+
+
+var widget = SC.Widget(document.getElementById('dino'));
+$('.content').click(function() {
+  widget.toggle();
+});
